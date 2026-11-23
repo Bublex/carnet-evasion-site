@@ -1,0 +1,37 @@
+/* Site de Carnet d’Évasion : mêmes couleurs que l’app (src/theme.js). */
+:root {
+  --bg: #0a1020; --raised: #151f36; --line: #2c3a58; --ink: #f0f4fc; --muted: #a9b7d1;
+  --surface: #1b2941; --accent: #63e1d1; --red: #d0455b;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-image: radial-gradient(70% 50% at 50% 0%, rgba(99, 225, 209, .10), transparent 70%);
+}
+a { color: var(--accent); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+header.bar { border-bottom: 1px solid var(--line); }
+header.bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 64px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; }
+.brand img { width: 32px; height: 32px; border-radius: 8px; }
+nav a { margin-left: 16px; color: var(--muted); text-decoration: none; font-size: 15px; }
+nav a[aria-current] { color: var(--ink); }
+main { padding: 40px 0 64px; }
+.hero { text-align: center; padding: 16px 0 24px; }
+.hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 16px 40px rgba(0, 0, 0, .45), 0 0 0 1px var(--line); }
+h1 { font-size: clamp(30px, 7vw, 42px); line-height: 1.15; margin: 24px 0 12px; letter-spacing: -.5px; }
+.lead { font-size: 19px; color: var(--muted); margin: 0 auto; max-width: 560px; }
+h2 { font-size: 24px; margin: 48px 0 12px; }
+h3 { font-size: 18px; margin: 28px 0 4px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 32px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.card b { display: block; color: var(--accent); margin-bottom: 4px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.note { background: var(--raised); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 16px; color: var(--muted); }
+.mail { display: inline-block; margin-top: 8px; padding: 12px 18px; border-radius: 12px; background: #245f6b; color: var(--ink); text-decoration: none; font-weight: 700; word-break: break-all; }
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; padding: 24px 0 40px; }
+footer p { margin: 4px 0; }
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
